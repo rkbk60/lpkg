@@ -1,0 +1,17 @@
+# lpkg v0.1.0 (https://github.com/rkbk60/lpkg)
+List up linux packages you have installed with commands.
+
+Usage:
+    lpkg [option] <"PACAKGE_MANAGER_COMMAND">
+
+Options:
+    -h, --help, help    show this help.
+
+Example:
+    # If you want to list packages installed by 'apt', then:
+    > lpkg "sudo apt"
+    # or
+    > lpkg sudo apt
+
+If you want to re-install packages from this list,
+use 'rpkg' command.

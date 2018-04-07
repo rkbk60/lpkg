@@ -1,0 +1,17 @@
+# rpkg v0.1.0 (https://github.com/rkbk60/lpkg)
+re-install linux packages with list.
+
+Usage:
+    rpkg [option] <LIST>
+    # LIST must be made by 'lpkg'.
+
+Options:
+    -h, --help, help    show this help.
+    -y                  install force.
+
+Example:
+    # Install packages with '~/pkg.txt':
+    > rpkg ~/pkg.txt
+    # Install packages with 'https://some.url/path/to/raw/list/file':
+    > rpkg https://some.url/path/to/raw/list/file
+
