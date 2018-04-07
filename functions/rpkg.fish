@@ -96,7 +96,7 @@ function rpkg
             case "-*" "" "#*"
                 # ignore
             case "*"
-                eval "$check_command $i" > /dev/null
+                eval "$check_command $i" > /dev/null 2>&1
                 test $status -eq 0
                     and set can_install_list    $can_install_list    "$i"
                     or  set cannot_install_list $cannot_install_list "$i"

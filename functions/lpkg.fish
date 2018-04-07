@@ -94,7 +94,7 @@ function lpkg
                     else if test $check = ""
                         set result "$k"
                     else
-                        eval "$check $i" > /dev/null
+                        eval "$check $i" > /dev/null 2>&1
                         and set result "$k"
                     end
                 else # equals "test is_install_command -eq 1"
