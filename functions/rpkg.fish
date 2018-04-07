@@ -86,7 +86,7 @@ function rpkg
 
     # check information
     set -l list_uname "unknown"
-    set -l this_uname (uname -rm)
+    set -l this_uname (uname -rmo)
     set -l can_install_list
     set -l cannot_install_list
     for i in (string split "\n" $list)

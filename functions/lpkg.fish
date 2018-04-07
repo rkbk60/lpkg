@@ -107,7 +107,7 @@ function lpkg
     if test $result = $separator
         echo "Notice: there are no packages installed by '$command'."
     else
-        echo "#uname:" (uname -rm)
+        echo "#uname:" (uname -rmo)
         echo "#command: $command"
         string trim -c $separator $result | string split $separator | sort
     end
